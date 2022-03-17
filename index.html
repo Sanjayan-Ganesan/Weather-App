@@ -15,9 +15,9 @@
         height: 50px;
         transform: translate(-50%,-50%);
         display: inline-flex;
-        background-color: black;
+        background-color: transparent;
         border-radius: 20px;
-        box-shadow: rgba(151, 151, 255, 0.25) 0px 13px 27px -5px, rgba(255, 132, 132, 0) 0px 8px 16px -8px;
+        
     }
     #input_bar{
         position: absolute;
@@ -30,24 +30,39 @@
         background-color: transparent;
         
     }
+    #container{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        width: 1250px;
+        height: 400px;
+        padding: 20px;
+        transform: translate(-50%,-50%);
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+        background-color: transparent;
+
+    }
     #display_container{
         position: absolute;
         top: 37%;
         left: 21%;
         width: 350px;
         height: 350px;
+        padding: 20px;
         transform: translate(-50%,-50%);
         display: inline;
         background-color: transparent;
     }
     #map_container{
         position: absolute;
-        top: 37%;
+        top: 20%;
         left: 65%;
-        width: 750px;
-        height: 350px;
+        width: 700px;
+        height: 200px;
         transform: translate(-50%,-50%);
-        display: inline;
+        display: inline-flex;
         background-color: transparent;
 
     }
@@ -68,14 +83,17 @@
 
     </div>
 
+<div id="container">
 
-    <div id="display_container">
 
-    </div>
+    <div id="display_container"></div>
 
-    <div id="map_container">
+    <div id="map_container"></div>
 
-        </div>
+    
+</div>
+
+   
     
 </body>
 </html>

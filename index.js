@@ -3,6 +3,7 @@ var container = document.getElementById("display_container");
 
 var map_container = document.getElementById("map_container");
 
+var main_container = document.getElementById("container");
 
 async function search(){
     var key = "56a0f5000c489d8dff3b8924440ee521";
@@ -82,7 +83,7 @@ document.getElementById("map_container").innerHTML = "";
         
        let iframe = document.createElement("iframe");
        iframe.src = src=`https://maps.google.com/maps?q=${data.name}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
-       iframe.style.width = "750px";
+       iframe.style.width = "1000px";
        iframe.style.height = "350px";
        iframe.style.borderRadius = "20px"
 
@@ -94,6 +95,8 @@ document.getElementById("map_container").innerHTML = "";
         container.append(main_div);
 
         map_container.append(iframe);
+
+        main_container.append(map_container,container);
 
 
   
