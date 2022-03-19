@@ -66,8 +66,20 @@
         background-color: transparent;
 
     }
+    #forecast{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        width: 1200px;
+        height: 100px;
+        transform: translate(-50%,-50%);
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-gap: 10px;
+        background-color: transparent;
+    }
 </style>
-<body background="https://www.teahub.io/photos/full/2-23762_awesome-background-on-wallpaper-hd-1920-x-1200.jpg">
+<body bgcolor="black">
     <div id="navbar">
         <div id="input_bar">
             <label style="color: white;">Your City:</label>
@@ -93,7 +105,9 @@
     
 </div>
 
-   
+   <div id="forecast">
+
+   </div>
     
 </body>
 </html>
