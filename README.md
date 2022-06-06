@@ -13,7 +13,7 @@
 </ul>
 
 
-<h2>Live Site</h2>
+<h2>Deployment Link</h2>
 
 <a href="https://clever-bell-d9d74f.netlify.app/">Live Site</a>
 
